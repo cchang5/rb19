@@ -10,3 +10,5 @@ blog-page: '/blog'
 spectre:
   exp: false
   icons: false
+dropdown:
+  enabled: false

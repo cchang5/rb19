@@ -56,4 +56,11 @@ jQuery(document).ready(function($){
     // Tree Menu
     $(".tree").treemenu({delay:300});
 
+	// Dropdowns.
+	$('#nav > ul').dropotron({
+		mode: 'fade',
+		noOpenerFade: true,
+		expandMode: (skel.vars.touch ? 'click' : 'hover')
+	});
+
 });

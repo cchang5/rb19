@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/cchang5/Sites/rb19/user/themes/quark/blueprints.yaml',
-    'modified' => 1540968691,
+    'modified' => 1541054313,
     'data' => [
         'name' => 'Quark',
         'version' => '1.2.2',
@@ -195,6 +195,19 @@ return [
                     'options' => [
                         1 => 'PLUGIN_ADMIN.ENABLED',
                         0 => 'PLUGIN_ADMIN.DISABLED'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ],
+                'dropdown.enabled' => [
+                    'type' => 'toggle',
+                    'label' => 'Dropdown in navbar',
+                    'highlight' => 1,
+                    'default' => 0,
+                    'options' => [
+                        1 => 'Enabled',
+                        0 => 'Disabled'
                     ],
                     'validate' => [
                         'type' => 'bool'

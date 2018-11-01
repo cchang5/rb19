@@ -172,3 +172,14 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
+
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

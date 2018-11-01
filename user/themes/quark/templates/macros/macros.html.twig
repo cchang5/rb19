@@ -1,22 +1,33 @@
 {% macro nav_loop(page) %}
   {% import _self as macros %}
-  {% for p in page.children.visible %}
-    {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
-    {% if p.children.visible.count > 0 %}
-      <li>
-        <a href="{{ p.url }}" class="{{ active_page }}">
-          {{ p.menu }}
-        </a>
+    <ul>
+      <li class="current"><a href="{{ base_url_absolute }}">Welcome</a></li>
+      <li class="submenu">
+        <a href="">Layouts</a>
         <ul>
-          {{ macros.nav_loop(p) }}
+          {% for page in pages.children %}
+          {% if page.visible %}
+          {% set current_page = (page.active or page.activeChild) ? 'current' : '' %}
+          <li class="{{ current_page }}">
+            <a href="{{ page.url }}">
+              {{ page.menu }}
+            </a>
+          </li>
+          {% endif %}
+          {% endfor %}
+          {% for mitem in site.menu %}
+          <li>
+            <a href="{{ mitem.link }}">{{ mitem.text }}</a>
+          </li>
+          {% endfor %}
+          <li class="submenu">
+            <a href="">Submenu</a>
+            <ul>
+              {% for submenu in site.submenu %}
+              <li><a href="{{ submenu.link }}">{{ submenu.text }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
         </ul>
       </li>
-    {% else %}
-      <li>
-        <a href="{{ p.url }}" class="{{ active_page }}">
-          {{ p.menu }}
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
 {% endmacro %}

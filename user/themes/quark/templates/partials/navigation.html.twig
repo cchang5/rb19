@@ -1,6 +1,154 @@
-{% import 'macros/macros.html.twig' as macros %}
-
-<ul {{ tree ? 'class="tree"' : '' }}>
-    {{ macros.nav_loop(pages) }}
+<ul>
+<li class="submenu">
+  <a href=""> <font color="black"><b>About</b></font></a>
+  <ul>
+    <li class="{{ current_page }}">
+      <a href="/committees">
+        <font color="#02A5DB"><b>Committees</b></font>
+      </a>
+    </li>
+    <li class="{{ current_page }}">
+      <a href="/dates">
+      <font color="#02A5DB"><b>Important Dates</b></font>
+      </a>
+    </li>
+    <li class="{{ current_page }}">
+      <a href="/supporters">
+      <font color="#02A5DB"><b>Supporters</b></font>
+      </a>
+    </li>
+    <li class="{{ current_page }}">
+      <a href="/ithems">
+      <font color="#02A5DB"><b>iTHEMS @ Berkeley</b></font>
+      </a>
+    </li>
+    {% for mitem in site.menu %}
+    <li>
+      <a href="{{ mitem.link }}">{{ mitem.text }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</li>
+<li class="submenu">
+  <a href=""> <font color="black"><b>Registration</b></font></a>
+  <ul>
+    <li class="{{ current_page }}">
+      <a href="/registration">
+        <font color="#02A5DB"><b>Registration</b></font>
+      </a>
+    </li>
+    <li class="{{ current_page }}">
+      <a href="/abstract-submission">
+        <font color="#02A5DB"><b>Abstract Submission</b></font>
+      </a>
+    </li>
+    <li class="{{ current_page }}">
+      <a href="/accomodations">
+        <font color="#02A5DB"><b>Accomodations</b></font>
+      </a>
+    </li>
+    <li class="{{ current_page }}">
+      <a href="/participants">
+        <font color="#02A5DB"><b>Participants</b></font>
+      </a>
+    </li>
+    <li class="{{ current_page }}">
+      <a href="/financial-support">
+        <font color="#02A5DB"><b>Financial Support</b></font>
+      </a>
+    </li>
+    {% for mitem in site.menu %}
+    <li>
+      <a href="{{ mitem.link }}">{{ mitem.text }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</li>
+<li class="submenu">
+<a href=""> <font color="black"><b>Program</b></font></a>
+<ul>
+  <li class="{{ current_page }}">
+    <a href="/schedule">
+      <font color="#02A5DB"><b>Schedule</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="/schedule">
+      <font color="#02A5DB"><b>Indico</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="/public-talk">
+      <font color="#02A5DB"><b>Public Talk</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="/social-events">
+      <font color="#02A5DB"><b>Social Events</b></font>
+    </a>
+  </li>
+ {% for mitem in site.menu %}
+  <li>
+    <a href="{{ mitem.link }}">{{ mitem.text }}</a>
+  </li>
+  {% endfor %}
 </ul>
+</li>
+<li class="submenu">
+<a href=""> <font color="black"><b>Local Guide</b></font></a>
+<ul>
+  <li class="{{ current_page }}">
+    <a href="http://www2.lbl.gov/Workplace/Transportation.html">
+      <font color="#02A5DB"><b>Directions</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="http://www.lbl.gov/Workplace/Facilities/Support/Busses/">
+      <font color="#02A5DB"><b>Local Shuttle</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="/venues">
+      <font color="#02A5DB"><b>Venues</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="/resturants">
+      <font color="#02A5DB"><b>Resturants</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="/attractions">
+      <font color="#02A5DB"><b>Attractions</b></font>
+    </a>
+  </li>
+ {% for mitem in site.menu %}
+  <li>
+    <a href="{{ mitem.link }}">{{ mitem.text }}</a>
+  </li>
+  {% endfor %}
+</ul>
+</li>
+
+<li class="submenu">
+<a href=""> <font color="black"><b>Media</b></font></a>
+<ul>
+  <li class="{{ current_page }}">
+    <a href="posters">
+      <font color="#02A5DB"><b>Posters</b></font>
+    </a>
+  </li>
+  <li class="{{ current_page }}">
+    <a href="photos">
+      <font color="#02A5DB"><b>Photos</b></font>
+    </a>
+  </li>
+ {% for mitem in site.menu %}
+  <li>
+    <a href="{{ mitem.link }}">{{ mitem.text }}</a>
+  </li>
+  {% endfor %}
+</ul>
+</li>
+
 

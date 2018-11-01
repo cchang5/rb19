@@ -46,9 +46,11 @@
                     <section class="navbar-section">
 
                         <nav class="dropmenu animated">
-                            {% block header_navigation %}
-                        {% include 'partials/navigation.html.twig' %}
-                            {% endblock %}
+                            {% include 'partials/navigation.html.twig' %}
+                              {% for button in site.buttons %}
+                              <li><a href="{{ button.link }}" class="button special">{{ button.text }}</a></li>
+                              {% endfor %}
+                            </ul>
                         </nav>
 
                         {% if config.plugins.login.enabled and grav.user.username %}

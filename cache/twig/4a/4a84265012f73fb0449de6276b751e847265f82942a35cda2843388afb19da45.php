@@ -15,7 +15,6 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
             'javascripts' => array($this, 'block_javascripts'),
             'body_classes' => array($this, 'block_body_classes'),
             'header' => array($this, 'block_header'),
-            'header_navigation' => array($this, 'block_header_navigation'),
             'hero' => array($this, 'block_hero'),
             'body' => array($this, 'block_body'),
             'messages' => array($this, 'block_messages'),
@@ -53,49 +52,49 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
     ";
         // line 39
         $this->displayBlock('header', $context, $blocks);
-        // line 70
+        // line 72
         echo "
     ";
-        // line 71
+        // line 73
         $this->displayBlock('hero', $context, $blocks);
-        // line 72
+        // line 74
         echo "
         <section id=\"start\">
         ";
-        // line 74
+        // line 76
         $this->displayBlock('body', $context, $blocks);
-        // line 84
+        // line 86
         echo "        </section>
 
     </div>
 
 ";
-        // line 88
+        // line 90
         $this->displayBlock('footer', $context, $blocks);
-        // line 96
+        // line 98
         echo "
     
     <div class=\"mobile-container\">
         <div class=\"overlay\" id=\"overlay\">
             <div class=\"mobile-logo\">
                 ";
-        // line 101
-        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 101)->display(array_merge($context, array("mobile" => true)));
-        // line 102
+        // line 103
+        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 103)->display(array_merge($context, array("mobile" => true)));
+        // line 104
         echo "            </div>
             <nav class=\"overlay-menu\">
                 ";
-        // line 104
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 104)->display(array_merge($context, array("tree" => true)));
-        // line 105
+        // line 106
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 106)->display(array_merge($context, array("tree" => true)));
+        // line 107
         echo "            </nav>
         </div>
     </div>
 
 ";
-        // line 109
+        // line 111
         $this->displayBlock('bottom', $context, $blocks);
-        // line 112
+        // line 114
         echo "
 </body>
 ";
@@ -222,20 +221,37 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
                         <nav class=\"dropmenu animated\">
                             ";
         // line 49
-        $this->displayBlock('header_navigation', $context, $blocks);
-        // line 52
-        echo "                        </nav>
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 49)->display($context);
+        // line 50
+        echo "                              ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["site"] ?? null), "buttons", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["button"]) {
+            // line 51
+            echo "                              <li><a href=\"";
+            echo $this->getAttribute($context["button"], "link", array());
+            echo "\" class=\"button special\">";
+            echo $this->getAttribute($context["button"], "text", array());
+            echo "</a></li>
+                              ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['button'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 53
+        echo "                            </ul>
+                        </nav>
 
                         ";
-        // line 54
+        // line 56
         if (($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", array()), "login", array()), "enabled", array()) && $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "user", array()), "username", array()))) {
-            // line 55
+            // line 57
             echo "                            <span class=\"login-status-wrapper\"><i class=\"fa fa-user\"></i> ";
-            $this->loadTemplate("partials/login-status.html.twig", "partials/base.html.twig", 55)->display($context);
+            $this->loadTemplate("partials/login-status.html.twig", "partials/base.html.twig", 57)->display($context);
             echo "</span>
                         ";
         }
-        // line 57
+        // line 59
         echo "
                     </section>
                 </nav>
@@ -251,69 +267,59 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
     ";
     }
 
-    // line 49
-    public function block_header_navigation($context, array $blocks = array())
-    {
-        // line 50
-        echo "                        ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 50)->display($context);
-        // line 51
-        echo "                            ";
-    }
-
-    // line 71
+    // line 73
     public function block_hero($context, array $blocks = array())
     {
     }
 
-    // line 74
+    // line 76
     public function block_body($context, array $blocks = array())
     {
-        // line 75
+        // line 77
         echo "            <section id=\"body-wrapper\" class=\"section\">
                 <section class=\"container ";
-        // line 76
+        // line 78
         echo ($context["grid_size"] ?? null);
         echo "\">
                     ";
-        // line 77
+        // line 79
         $this->displayBlock('messages', $context, $blocks);
-        // line 80
+        // line 82
         echo "                    ";
         $this->displayBlock('content', $context, $blocks);
-        // line 81
+        // line 83
         echo "                </section>
             </section>
         ";
     }
 
-    // line 77
+    // line 79
     public function block_messages($context, array $blocks = array())
     {
-        // line 78
+        // line 80
         echo "                        ";
         try {
-            $this->loadTemplate("partials/messages.html.twig", "partials/base.html.twig", 78)->display($context);
+            $this->loadTemplate("partials/messages.html.twig", "partials/base.html.twig", 80)->display($context);
         } catch (Twig_Error_Loader $e) {
             // ignore missing template
         }
 
-        // line 79
+        // line 81
         echo "                    ";
     }
 
-    // line 80
+    // line 82
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 88
+    // line 90
     public function block_footer($context, array $blocks = array())
     {
-        // line 89
+        // line 91
         echo "    <section id=\"footer\" class=\"section bg-gray\">
         <section class=\"container ";
-        // line 90
+        // line 92
         echo ($context["grid_size"] ?? null);
         echo "\">
             <p>Set funding sources here.
@@ -323,10 +329,10 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
 ";
     }
 
-    // line 109
+    // line 111
     public function block_bottom($context, array $blocks = array())
     {
-        // line 110
+        // line 112
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -345,7 +351,7 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
 
     public function getDebugInfo()
     {
-        return array (  330 => 110,  327 => 109,  317 => 90,  314 => 89,  311 => 88,  306 => 80,  302 => 79,  294 => 78,  291 => 77,  285 => 81,  282 => 80,  280 => 77,  276 => 76,  273 => 75,  270 => 74,  265 => 71,  261 => 51,  258 => 50,  255 => 49,  239 => 57,  233 => 55,  231 => 54,  227 => 52,  225 => 49,  219 => 45,  217 => 44,  211 => 41,  208 => 40,  205 => 39,  199 => 37,  195 => 32,  192 => 31,  189 => 30,  186 => 29,  183 => 28,  179 => 25,  176 => 24,  173 => 23,  170 => 22,  165 => 21,  160 => 20,  157 => 19,  154 => 18,  146 => 33,  144 => 28,  138 => 26,  136 => 18,  131 => 16,  127 => 15,  124 => 14,  122 => 13,  111 => 9,  108 => 8,  105 => 7,  99 => 112,  97 => 109,  91 => 105,  89 => 104,  85 => 102,  83 => 101,  76 => 96,  74 => 88,  68 => 84,  66 => 74,  62 => 72,  60 => 71,  57 => 70,  55 => 39,  50 => 37,  47 => 36,  45 => 7,  40 => 5,  37 => 4,  35 => 3,  33 => 2,  31 => 1,);
+        return array (  336 => 112,  333 => 111,  323 => 92,  320 => 91,  317 => 90,  312 => 82,  308 => 81,  300 => 80,  297 => 79,  291 => 83,  288 => 82,  286 => 79,  282 => 78,  279 => 77,  276 => 76,  271 => 73,  255 => 59,  249 => 57,  247 => 56,  242 => 53,  231 => 51,  226 => 50,  224 => 49,  218 => 45,  216 => 44,  210 => 41,  207 => 40,  204 => 39,  198 => 37,  194 => 32,  191 => 31,  188 => 30,  185 => 29,  182 => 28,  178 => 25,  175 => 24,  172 => 23,  169 => 22,  164 => 21,  159 => 20,  156 => 19,  153 => 18,  145 => 33,  143 => 28,  137 => 26,  135 => 18,  130 => 16,  126 => 15,  123 => 14,  121 => 13,  110 => 9,  107 => 8,  104 => 7,  98 => 114,  96 => 111,  90 => 107,  88 => 106,  84 => 104,  82 => 103,  75 => 98,  73 => 90,  67 => 86,  65 => 76,  61 => 74,  59 => 73,  56 => 72,  54 => 39,  49 => 37,  46 => 36,  44 => 7,  39 => 5,  36 => 4,  34 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -406,9 +412,11 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
                     <section class=\"navbar-section\">
 
                         <nav class=\"dropmenu animated\">
-                            {% block header_navigation %}
-                        {% include 'partials/navigation.html.twig' %}
-                            {% endblock %}
+                            {% include 'partials/navigation.html.twig' %}
+                              {% for button in site.buttons %}
+                              <li><a href=\"{{ button.link }}\" class=\"button special\">{{ button.text }}</a></li>
+                              {% endfor %}
+                            </ul>
                         </nav>
 
                         {% if config.plugins.login.enabled and grav.user.username %}
