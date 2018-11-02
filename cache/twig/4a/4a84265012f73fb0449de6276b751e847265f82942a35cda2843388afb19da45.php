@@ -71,30 +71,30 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
 ";
         // line 90
         $this->displayBlock('footer', $context, $blocks);
-        // line 98
+        // line 120
         echo "
     
     <div class=\"mobile-container\">
         <div class=\"overlay\" id=\"overlay\">
             <div class=\"mobile-logo\">
                 ";
-        // line 103
-        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 103)->display(array_merge($context, array("mobile" => true)));
-        // line 104
+        // line 125
+        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 125)->display(array_merge($context, array("mobile" => true)));
+        // line 126
         echo "            </div>
             <nav class=\"overlay-menu\">
                 ";
-        // line 106
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 106)->display(array_merge($context, array("tree" => true)));
-        // line 107
+        // line 128
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 128)->display(array_merge($context, array("tree" => true)));
+        // line 129
         echo "            </nav>
         </div>
     </div>
 
 ";
-        // line 111
+        // line 133
         $this->displayBlock('bottom', $context, $blocks);
-        // line 114
+        // line 136
         echo "
 </body>
 ";
@@ -317,22 +317,62 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
     public function block_footer($context, array $blocks = array())
     {
         // line 91
-        echo "    <section id=\"footer\" class=\"section bg-gray\">
-        <section class=\"container ";
-        // line 92
-        echo ($context["grid_size"] ?? null);
-        echo "\">
-            <p>Set funding sources here.
+        echo "    <section id=\"footer\" class=\"section bg-light-blue\">
+        <section class=\"container 7x1\">
+            <p>
+                <a href=\"http://www.riken.jp/en/\">
+                    <img src=\"";
+        // line 95
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/riken-logo.svg");
+        echo "\" alt=\"RIKEN\" style=\"width:104.852px;height:40.578px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"https://ithems.riken.jp/en\">
+                    <img src=\"";
+        // line 98
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/ithems-logo.svg");
+        echo "\" alt=\"Interdisciplinary Theoretical and Mathematical Sciences\" style=\"width:105.802px;height:60.614px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"http://www.cems.riken.jp/en/\">
+                    <img src=\"";
+        // line 101
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/cems-logo.png");
+        echo "\" alt=\"Center for Emergent Matter Science\" style=\"width:142.046px;height:35.13px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                </a>
+                <a href=\"https://www.lbl.gov/\">
+                    <img src=\"";
+        // line 105
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/lbnl-logo.svg");
+        echo "\" alt=\"Lawrence Berkeley National Laboratory\" style=\"width:244.477px;height:36.159px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a> 
+                <a href=\"https://www.berkeley.edu/\">
+                    <img src=\"";
+        // line 108
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/ucb-logo.svg");
+        echo "\" alt=\"University of California - Berkeley\" style=\"width:128.075px;height:39.416px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"https://berkeleyquantum.org/\">
+                    <img src=\"";
+        // line 111
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/bq-logo.svg");
+        echo "\" alt=\"Berkeley Quantum\" style=\"width:41.44px;height:45.353px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"https://science.energy.gov/\">
+                    <img src=\"";
+        // line 114
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/doe-logo.svg");
+        echo "\" alt=\"Department of Energy - Office of Science\" style=\"width:229.638px;height:34.959px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
             </p>
         </section>
     </section>
 ";
     }
 
-    // line 111
+    // line 133
     public function block_bottom($context, array $blocks = array())
     {
-        // line 112
+        // line 134
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -351,7 +391,7 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
 
     public function getDebugInfo()
     {
-        return array (  336 => 112,  333 => 111,  323 => 92,  320 => 91,  317 => 90,  312 => 82,  308 => 81,  300 => 80,  297 => 79,  291 => 83,  288 => 82,  286 => 79,  282 => 78,  279 => 77,  276 => 76,  271 => 73,  255 => 59,  249 => 57,  247 => 56,  242 => 53,  231 => 51,  226 => 50,  224 => 49,  218 => 45,  216 => 44,  210 => 41,  207 => 40,  204 => 39,  198 => 37,  194 => 32,  191 => 31,  188 => 30,  185 => 29,  182 => 28,  178 => 25,  175 => 24,  172 => 23,  169 => 22,  164 => 21,  159 => 20,  156 => 19,  153 => 18,  145 => 33,  143 => 28,  137 => 26,  135 => 18,  130 => 16,  126 => 15,  123 => 14,  121 => 13,  110 => 9,  107 => 8,  104 => 7,  98 => 114,  96 => 111,  90 => 107,  88 => 106,  84 => 104,  82 => 103,  75 => 98,  73 => 90,  67 => 86,  65 => 76,  61 => 74,  59 => 73,  56 => 72,  54 => 39,  49 => 37,  46 => 36,  44 => 7,  39 => 5,  36 => 4,  34 => 3,  32 => 2,  30 => 1,);
+        return array (  376 => 134,  373 => 133,  363 => 114,  357 => 111,  351 => 108,  345 => 105,  338 => 101,  332 => 98,  326 => 95,  320 => 91,  317 => 90,  312 => 82,  308 => 81,  300 => 80,  297 => 79,  291 => 83,  288 => 82,  286 => 79,  282 => 78,  279 => 77,  276 => 76,  271 => 73,  255 => 59,  249 => 57,  247 => 56,  242 => 53,  231 => 51,  226 => 50,  224 => 49,  218 => 45,  216 => 44,  210 => 41,  207 => 40,  204 => 39,  198 => 37,  194 => 32,  191 => 31,  188 => 30,  185 => 29,  182 => 28,  178 => 25,  175 => 24,  172 => 23,  169 => 22,  164 => 21,  159 => 20,  156 => 19,  153 => 18,  145 => 33,  143 => 28,  137 => 26,  135 => 18,  130 => 16,  126 => 15,  123 => 14,  121 => 13,  110 => 9,  107 => 8,  104 => 7,  98 => 136,  96 => 133,  90 => 129,  88 => 128,  84 => 126,  82 => 125,  75 => 120,  73 => 90,  67 => 86,  65 => 76,  61 => 74,  59 => 73,  56 => 72,  54 => 39,  49 => 37,  46 => 36,  44 => 7,  39 => 5,  36 => 4,  34 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -454,9 +494,31 @@ class __TwigTemplate_4770e80a0d516c8eb95d62c527e9bdf4681da7a8c383e2b02a2d8f291a1
     </div>
 
 {% block footer %}
-    <section id=\"footer\" class=\"section bg-gray\">
-        <section class=\"container {{ grid_size }}\">
-            <p>Set funding sources here.
+    <section id=\"footer\" class=\"section bg-light-blue\">
+        <section class=\"container 7x1\">
+            <p>
+                <a href=\"http://www.riken.jp/en/\">
+                    <img src=\"{{ url('theme://images/riken-logo.svg') }}\" alt=\"RIKEN\" style=\"width:104.852px;height:40.578px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"https://ithems.riken.jp/en\">
+                    <img src=\"{{ url('theme://images/ithems-logo.svg') }}\" alt=\"Interdisciplinary Theoretical and Mathematical Sciences\" style=\"width:105.802px;height:60.614px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"http://www.cems.riken.jp/en/\">
+                    <img src=\"{{ url('theme://images/cems-logo.png') }}\" alt=\"Center for Emergent Matter Science\" style=\"width:142.046px;height:35.13px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                </a>
+                <a href=\"https://www.lbl.gov/\">
+                    <img src=\"{{ url('theme://images/lbnl-logo.svg') }}\" alt=\"Lawrence Berkeley National Laboratory\" style=\"width:244.477px;height:36.159px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a> 
+                <a href=\"https://www.berkeley.edu/\">
+                    <img src=\"{{ url('theme://images/ucb-logo.svg') }}\" alt=\"University of California - Berkeley\" style=\"width:128.075px;height:39.416px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"https://berkeleyquantum.org/\">
+                    <img src=\"{{ url('theme://images/bq-logo.svg') }}\" alt=\"Berkeley Quantum\" style=\"width:41.44px;height:45.353px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
+                <a href=\"https://science.energy.gov/\">
+                    <img src=\"{{ url('theme://images/doe-logo.svg') }}\" alt=\"Department of Energy - Office of Science\" style=\"width:229.638px;height:34.959px;border:0;\" align=\"middle\" hspace=\"20\">
+                </a>
             </p>
         </section>
     </section>

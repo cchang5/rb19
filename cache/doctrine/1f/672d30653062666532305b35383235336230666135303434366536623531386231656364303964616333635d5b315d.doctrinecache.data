@@ -1,13 +1,5 @@
----
-title: Committees
-content:
-    items: '@self.modular'
-    order:
-        by: ''
-        dir: ''
----
-
-<h3> <font color="#8ADDF8">COMMITTEES </font></h3>
+1541786843
+a:2:{s:7:"content";s:741:"<h3> <font color="#8ADDF8">COMMITTEES </font></h3>
 <div class="row">
   <div class="column">
       <h4> <font color="#8ADDF8">ORGANIZING COMMITTEE</font></h4>
@@ -26,4 +18,4 @@ content:
        Irfan Siddiqi (UCB/BQ)</br>
        Seigo Tarucha (RIKEN CEMS/Tokyo)
   </div>
-</div> 
+</div> ";s:12:"content_meta";N;}

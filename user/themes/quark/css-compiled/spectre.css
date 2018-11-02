@@ -155,7 +155,7 @@ a:hover { color: #ED1C24; }
 
 a:active, a.active { color: #8addf8; }
 
-@media only screen and (max-width : 321px) {
+@media only screen and (max-width : 841px) {
 a { color: black; outline: none; text-decoration: none; }
 
 a:focus { box-shadow: 0 0 0 0.1rem black; }
@@ -1059,6 +1059,8 @@ a.text-error:visited { color: #ff6003; }
 .bg-dark { background: #454d5d; color: #fff; }
 
 .bg-gray { background: #f8f9fa; }
+
+.bg-light-blue { background: #84D4F2; }
 
 .bg-success { background: #32b643; color: #fff; }
 
