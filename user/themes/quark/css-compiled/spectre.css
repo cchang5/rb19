@@ -29,7 +29,9 @@ hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2
 a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ }
 
 /** Remove the outline on focused links when they are also active or hovered in all browsers (opinionated). */
-a:active, a:hover { outline-width: 0; }
+a:active { outline-width: 0; }
+
+a:hover { outline-width: 0; color:#ED1C24; }
 
 /** Modify default styling of address. */
 address { font-style: normal; }
@@ -137,15 +139,30 @@ template { display: none; }
 
 html { box-sizing: border-box; font-size: 20px; line-height: 1.5; -webkit-tap-highlight-color: transparent; }
 
-body { background: #fff; color: #50596c; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 0.8rem; overflow-x: hidden; text-rendering: optimizeLegibility; }
+body { background: #fff; color: #8addf8; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 0.8rem; overflow-x: hidden; text-rendering: optimizeLegibility; }
 
-a { color: #3085EE; outline: none; text-decoration: none; }
+a { color: #8addf8; outline: none; text-decoration: none; }
 
-a:focus { box-shadow: 0 0 0 0.1rem rgba(48, 133, 238, 0.2); }
+a:focus { box-shadow: 0 0 0 0.1rem #8addf8; }
 
-a:focus, a:hover, a:active, a.active { color: #126bd9; text-decoration: underline; }
+a:focus { color: #8addf8; }
 
-a:visited { color: #5fa1f2; }
+a:link { color: #8addf8; }
+
+a:visited { color: #8addf8; }
+
+a:hover { color: #ED1C24; }
+
+a:active, a.active { color: #8addf8; }
+
+@media only screen and (max-width : 321px) {
+a { color: black; outline: none; text-decoration: none; }
+
+a:focus { box-shadow: 0 0 0 0.1rem black; }
+
+a:focus, a:link, a:visited, a:hover, a:active, a.active { color: black; }
+
+}
 
 h1, h2, h3, h4, h5, h6 { color: inherit; font-weight: 500; line-height: 1.2; margin-bottom: .5em; margin-top: 0; }
 

@@ -25,7 +25,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/committees\">
-        <font color=\"#02A5DB\"><b>Committees</b></font>
+        <b>Committees</b>
       </a>
     </li>
     <li class=\"";
@@ -33,7 +33,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/dates\">
-      <font color=\"#02A5DB\"><b>Important Dates</b></font>
+      <b>Important Dates</b>
       </a>
     </li>
     <li class=\"";
@@ -41,7 +41,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/supporters\">
-      <font color=\"#02A5DB\"><b>Supporters</b></font>
+      <b>Supporters</b>
       </a>
     </li>
     <li class=\"";
@@ -49,7 +49,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/ithems\">
-      <font color=\"#02A5DB\"><b>iTHEMS @ Berkeley</b></font>
+      <b>iTHEMS @ Berkeley</b>
       </a>
     </li>
     ";
@@ -82,7 +82,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/registration\">
-        <font color=\"#02A5DB\"><b>Registration</b></font>
+        <b>Registration</b>
       </a>
     </li>
     <li class=\"";
@@ -90,7 +90,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/abstract-submission\">
-        <font color=\"#02A5DB\"><b>Abstract Submission</b></font>
+        <b>Abstract Submission</b>
       </a>
     </li>
     <li class=\"";
@@ -98,7 +98,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/accomodations\">
-        <font color=\"#02A5DB\"><b>Accomodations</b></font>
+        <b>Accomodations</b>
       </a>
     </li>
     <li class=\"";
@@ -106,7 +106,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/participants\">
-        <font color=\"#02A5DB\"><b>Participants</b></font>
+        <b>Participants</b>
       </a>
     </li>
     <li class=\"";
@@ -114,7 +114,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
       <a href=\"/financial-support\">
-        <font color=\"#02A5DB\"><b>Financial Support</b></font>
+        <b>Financial Support</b>
       </a>
     </li>
     ";
@@ -147,7 +147,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"/schedule\">
-      <font color=\"#02A5DB\"><b>Schedule</b></font>
+      <b>Schedule</b>
     </a>
   </li>
   <li class=\"";
@@ -155,7 +155,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"/schedule\">
-      <font color=\"#02A5DB\"><b>Indico</b></font>
+      <b>Indico</b>
     </a>
   </li>
   <li class=\"";
@@ -163,7 +163,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"/public-talk\">
-      <font color=\"#02A5DB\"><b>Public Talk</b></font>
+      <b>Public Talk</b>
     </a>
   </li>
   <li class=\"";
@@ -171,7 +171,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"/social-events\">
-      <font color=\"#02A5DB\"><b>Social Events</b></font>
+      <b>Social Events</b>
     </a>
   </li>
  ";
@@ -204,7 +204,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"http://www2.lbl.gov/Workplace/Transportation.html\">
-      <font color=\"#02A5DB\"><b>Directions</b></font>
+      <b>Directions</b>
     </a>
   </li>
   <li class=\"";
@@ -212,7 +212,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"http://www.lbl.gov/Workplace/Facilities/Support/Busses/\">
-      <font color=\"#02A5DB\"><b>Local Shuttle</b></font>
+      <b>Local Shuttle</b>
     </a>
   </li>
   <li class=\"";
@@ -220,7 +220,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"/venues\">
-      <font color=\"#02A5DB\"><b>Venues</b></font>
+      <b>Venues</b>
     </a>
   </li>
   <li class=\"";
@@ -228,7 +228,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"/resturants\">
-      <font color=\"#02A5DB\"><b>Resturants</b></font>
+      <b>Resturants</b>
     </a>
   </li>
   <li class=\"";
@@ -236,7 +236,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"/attractions\">
-      <font color=\"#02A5DB\"><b>Attractions</b></font>
+      <b>Attractions</b>
     </a>
   </li>
  ";
@@ -270,7 +270,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"posters\">
-      <font color=\"#02A5DB\"><b>Posters</b></font>
+      <b>Posters</b>
     </a>
   </li>
   <li class=\"";
@@ -278,7 +278,7 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         echo ($context["current_page"] ?? null);
         echo "\">
     <a href=\"photos\">
-      <font color=\"#02A5DB\"><b>Photos</b></font>
+      <b>Photos</b>
     </a>
   </li>
  ";
@@ -303,8 +303,6 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
         // line 151
         echo "</ul>
 </li>
-
-
 ";
     }
 
@@ -339,22 +337,22 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
   <ul>
     <li class=\"{{ current_page }}\">
       <a href=\"/committees\">
-        <font color=\"#02A5DB\"><b>Committees</b></font>
+        <b>Committees</b>
       </a>
     </li>
     <li class=\"{{ current_page }}\">
       <a href=\"/dates\">
-      <font color=\"#02A5DB\"><b>Important Dates</b></font>
+      <b>Important Dates</b>
       </a>
     </li>
     <li class=\"{{ current_page }}\">
       <a href=\"/supporters\">
-      <font color=\"#02A5DB\"><b>Supporters</b></font>
+      <b>Supporters</b>
       </a>
     </li>
     <li class=\"{{ current_page }}\">
       <a href=\"/ithems\">
-      <font color=\"#02A5DB\"><b>iTHEMS @ Berkeley</b></font>
+      <b>iTHEMS @ Berkeley</b>
       </a>
     </li>
     {% for mitem in site.menu %}
@@ -369,27 +367,27 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
   <ul>
     <li class=\"{{ current_page }}\">
       <a href=\"/registration\">
-        <font color=\"#02A5DB\"><b>Registration</b></font>
+        <b>Registration</b>
       </a>
     </li>
     <li class=\"{{ current_page }}\">
       <a href=\"/abstract-submission\">
-        <font color=\"#02A5DB\"><b>Abstract Submission</b></font>
+        <b>Abstract Submission</b>
       </a>
     </li>
     <li class=\"{{ current_page }}\">
       <a href=\"/accomodations\">
-        <font color=\"#02A5DB\"><b>Accomodations</b></font>
+        <b>Accomodations</b>
       </a>
     </li>
     <li class=\"{{ current_page }}\">
       <a href=\"/participants\">
-        <font color=\"#02A5DB\"><b>Participants</b></font>
+        <b>Participants</b>
       </a>
     </li>
     <li class=\"{{ current_page }}\">
       <a href=\"/financial-support\">
-        <font color=\"#02A5DB\"><b>Financial Support</b></font>
+        <b>Financial Support</b>
       </a>
     </li>
     {% for mitem in site.menu %}
@@ -404,22 +402,22 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
 <ul>
   <li class=\"{{ current_page }}\">
     <a href=\"/schedule\">
-      <font color=\"#02A5DB\"><b>Schedule</b></font>
+      <b>Schedule</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"/schedule\">
-      <font color=\"#02A5DB\"><b>Indico</b></font>
+      <b>Indico</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"/public-talk\">
-      <font color=\"#02A5DB\"><b>Public Talk</b></font>
+      <b>Public Talk</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"/social-events\">
-      <font color=\"#02A5DB\"><b>Social Events</b></font>
+      <b>Social Events</b>
     </a>
   </li>
  {% for mitem in site.menu %}
@@ -434,27 +432,27 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
 <ul>
   <li class=\"{{ current_page }}\">
     <a href=\"http://www2.lbl.gov/Workplace/Transportation.html\">
-      <font color=\"#02A5DB\"><b>Directions</b></font>
+      <b>Directions</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"http://www.lbl.gov/Workplace/Facilities/Support/Busses/\">
-      <font color=\"#02A5DB\"><b>Local Shuttle</b></font>
+      <b>Local Shuttle</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"/venues\">
-      <font color=\"#02A5DB\"><b>Venues</b></font>
+      <b>Venues</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"/resturants\">
-      <font color=\"#02A5DB\"><b>Resturants</b></font>
+      <b>Resturants</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"/attractions\">
-      <font color=\"#02A5DB\"><b>Attractions</b></font>
+      <b>Attractions</b>
     </a>
   </li>
  {% for mitem in site.menu %}
@@ -470,12 +468,12 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
 <ul>
   <li class=\"{{ current_page }}\">
     <a href=\"posters\">
-      <font color=\"#02A5DB\"><b>Posters</b></font>
+      <b>Posters</b>
     </a>
   </li>
   <li class=\"{{ current_page }}\">
     <a href=\"photos\">
-      <font color=\"#02A5DB\"><b>Photos</b></font>
+      <b>Photos</b>
     </a>
   </li>
  {% for mitem in site.menu %}
@@ -485,8 +483,6 @@ class __TwigTemplate_2e7fc383ff5ad0da86aa8ce9ba01272b4d2c8eed176dccc708285418cc9
   {% endfor %}
 </ul>
 </li>
-
-
 ", "partials/navigation.html.twig", "/Users/cchang5/Sites/rb19/user/themes/quark/templates/partials/navigation.html.twig");
     }
 }
