@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/cchang5/Sites/rb19/user/plugins/admin/languages/en.yaml',
-    'modified' => 1540968427,
+    'modified' => 1541651774,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',

@@ -1,4 +1,17 @@
-<section id="{{ id }}" class="section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }}" {% if hero_image %}style="background-image: url({{ hero_image.url }});"{% endif %}>
+<section id="{{ id }}" class="section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }}"
+    {% if 7 <= "now"|date("G", "America/Los_Angeles") and "now"|date("G", "America/Los_Angeles") <= 15 %}
+        {% if hero_image_morning %}
+            style="background-image: url({{ hero_image_morning.url }});"
+        {% endif %}
+    {% elseif 16 <= "now"|date("G", "America/Los_Angeles") and "now"|date("G", "America/Los_Angeles") <= 19 %}
+        {% if hero_image_afternoon %}
+            style="background-image: url({{ hero_image_afternoon.url }});"
+        {% endif %}
+    {% else %}
+        {% if hero_image_night %}
+            style="background-image: url({{ hero_image_night.url }});"
+        {% endif %}
+    {% endif %}>
     <div class="image-overlay"></div>
     <section class="container {{ grid_size }}" style="text-align: {{ page.header.hero_align|default('center') }}">
         {{ content|raw }}

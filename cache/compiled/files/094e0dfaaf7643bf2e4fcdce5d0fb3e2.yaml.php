@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/cchang5/Sites/rb19/system/config/security.yaml',
-    'modified' => 1539031584,
+    'modified' => 1541651751,
     'data' => [
         'xss_whitelist' => [
             0 => 'admin.super'

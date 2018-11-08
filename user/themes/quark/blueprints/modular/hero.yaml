@@ -19,5 +19,19 @@ form:
               label: Hero Image
               preview_images: true
               description: 'If not specified, this defaults to the first image found in the page''s folder'
-
+            header.hero_image_morning:
+              type: filepicker
+              label: Hero Image Morning
+              preview_images: true
+              description: 'If not specified, this defaults to the first image found in the page''s folder'
+            header.hero_image_afternoon:
+              type: filepicker
+              label: Hero Image Afternoon
+              preview_images: true
+              description: 'If not specified, this defaults to the first image found in the page''s folder'
+            header.hero_image_night:
+              type: filepicker
+              label: Hero Image Night
+              preview_images: true
+              description: 'If not specified, this defaults to the first image found in the page''s folder'
 

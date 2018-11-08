@@ -1,4 +1,7 @@
 {% set grid_size = theme_var('grid-size') %}
 {% set hero_image = page.header.hero_image ? page.media[page.header.hero_image] : page.media.images|first %}
+{% set hero_image_morning = page.header.hero_image_morning ? page.media[page.header.hero_image_morning] : page.media.images|first %}
+{% set hero_image_afternoon = page.header.hero_image_afternoon ? page.media[page.header.hero_image_afternoon] : page.media.images|first %}
+{% set hero_image_night = page.header.hero_image_night ? page.media[page.header.hero_image_night] : page.media.images|first %}
 
 {% include 'partials/hero.html.twig' %}

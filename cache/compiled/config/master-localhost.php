@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1541148107,
-    'checksum' => '06a2da52394e37da9e2d4806a6ba34b5',
+    'timestamp' => 1541656749,
+    'checksum' => '13749d69cb493c05316ff154d73886af',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,29 +23,29 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1541148106
+                'modified' => 1541656744
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1539031584
+                'modified' => 1541651751
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1539031584
+                'modified' => 1541651751
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1539031584
+                'modified' => 1541651751
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1539031584
+                'modified' => 1541651751
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1539031584
+                'modified' => 1541651751
             ]
         ],
         'user/plugins' => [
@@ -55,7 +55,7 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1540968427
+                'modified' => 1541651774
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -312,7 +312,7 @@ return [
                     'mime' => 'video/x-flv'
                 ],
                 'webm' => [
-                    'type' => 'file',
+                    'type' => 'video',
                     'thumb' => 'media/thumb-webm.png',
                     'mime' => 'video/webm'
                 ],
@@ -711,7 +711,7 @@ return [
                 ]
             ],
             'twig' => [
-                'cache' => true,
+                'cache' => false,
                 'debug' => true,
                 'auto_reload' => true,
                 'autoescape' => false,

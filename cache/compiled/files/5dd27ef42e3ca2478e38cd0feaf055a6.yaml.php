@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/cchang5/Sites/rb19/user/config/system.yaml',
-    'modified' => 1541148106,
+    'modified' => 1541656744,
     'data' => [
         'home' => [
             'alias' => '/home'
@@ -26,7 +26,7 @@ return [
             'prefix' => 'g'
         ],
         'twig' => [
-            'cache' => true,
+            'cache' => false,
             'debug' => true,
             'auto_reload' => true,
             'autoescape' => false

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/cchang5/Sites/rb19/system/config/media.yaml',
-    'modified' => 1539031584,
+    'modified' => 1541651751,
     'data' => [
         'types' => [
             'defaults' => [
@@ -73,7 +73,7 @@ return [
                 'mime' => 'video/x-flv'
             ],
             'webm' => [
-                'type' => 'file',
+                'type' => 'video',
                 'thumb' => 'media/thumb-webm.png',
                 'mime' => 'video/webm'
             ],
