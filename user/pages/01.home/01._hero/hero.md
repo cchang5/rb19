@@ -7,7 +7,7 @@ twig_first: true
 never_cache_twig: true
 cache_enable: false
 visible: false
-hero_classes: 'parallax text-dark hero-large'
+hero_classes: 'parallax text-dark hero-fullscreen'
 hero_image_morning: header_morning.jpg
 hero_image_afternoon: header_afternoon.jpg
 hero_image_night: header_night.jpg
