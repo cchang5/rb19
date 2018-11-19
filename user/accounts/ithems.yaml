@@ -1,0 +1,11 @@
+email: rb19@lbl.gov
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: ithems
+title: admin
+state: enabled
+hashed_password: $2y$10$iwk7XofhuJJ661advMNB5ekswiCjeR8iA5SDG5PdfLPedJ472ycd6
