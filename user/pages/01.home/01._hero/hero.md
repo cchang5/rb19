@@ -1,5 +1,6 @@
 ---
 title: Homepage
+media_order: 'header_afternoon.jpg,header_morning.jpg,header_night.jpg'
 process:
     markdown: true
     twig: true

@@ -24,7 +24,7 @@ content:
     <font color="#FFFFFF">
        Jonathan Carter (LBNL CRD/BQ)</br>
        Yasunobu Nakamura (RIKEN CEMS/Tokyo)</br>
-       Franco Nori (RIKEN CEMS/Michigan)</br>
+       Franco Nori (RIKEN/Michigan)</br>
        Thomas Schenkel (LBNL AT-AP/BQ)</br>
        Irfan Siddiqi (UCB/BQ)</br>
        Seigo Tarucha (RIKEN CEMS/Tokyo)

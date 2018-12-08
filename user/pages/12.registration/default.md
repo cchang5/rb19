@@ -14,7 +14,8 @@ title: Registration
 <br><br>
 You will need to create an account on the Indico system for abstract submission. Please note that account creation takes approximately 1 business day.
 <br><br>
-Indico accounts may be created now.<br>
-Registration starts... soon.<br>
-Registration deadline on January 6.
+Indico accounts may be created.<br>
+Registration is now open.<br>
+Registration deadline for arranged accomodations is Sunday December 9.<br>
+Final registration deadline is Sunday January 13.
 </font>
