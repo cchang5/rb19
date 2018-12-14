@@ -19,6 +19,10 @@ body {
     clear: both;
 }
 
+th {
+  text-align: left;
+}
+
 .header-fixed #body-wrapper { padding-top: 4rem; }
 
 .header-fixed .hero + #start > #body-wrapper { padding-top: 0; }

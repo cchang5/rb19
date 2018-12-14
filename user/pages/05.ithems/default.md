@@ -3,7 +3,7 @@ title: ithems
 media_order: 'riken-logo.png,ithems-logo.png'
 ---
 
-## <font color="#FFFFFF">RIKEN iTHEMS at Berkeley</font>
+<h3><font color="#FFFFFF">RIKEN iTHEMS at Berkeley</font></h3>
 
 <font color="#FFFFFF">
 The RIKEN Interdisciplinary Theoretical and Mathematical Sciences Program (iTHEMS) is an international research program based out of RIKEN. Researchers across various disciplines of theoretical, mathematical, and computational sciences gather together with purpose of finding commonality between what may appear as largely unrelated fields. However, through discussion between researchers of different backgrounds, we may discover mature methodologies in other fields that are suitable for our main research goals. The RIKEN iTHEMS program aims to give researchers the environment and resources to explore such connections in the hope of leading to breakthroughs that are otherwise enigmatic.<br><br>

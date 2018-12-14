@@ -3,13 +3,13 @@ title: Posters
 media_order: plain_web.png
 ---
 
-<h3><font color='#FFFFFF'>Posters</font></h3>
+<h3><font color='#FFFFFF'>POSTERS</font></h3>
 
 <table style="width:100%">
     <tr>
-    <th><font color='#FFFFFF'>Continuum</font></th>
-    <th><font color='#FFFFFF'>Hexagonal lattice</font></th> 
-    <th><font color='#FFFFFF'>Kagome lattice</font></th>
+    <th><font color='#FFFFFF'>CONTINUUM</font></th>
+    <th><font color='#FFFFFF'>HEXAGONAL LATTICE</font></th> 
+    <th><font color='#FFFFFF'>KAGOME LATTICE</font></th>
   </tr>
 
     <tr>

@@ -2,7 +2,7 @@
 title: 'Financial Support'
 ---
 
-<h3><font color='#FFFFFF'>Financial Support</font></h3>
+<h3><font color='#FFFFFF'>FINANCIAL SUPPORT</font></h3>
 
 <font color='#FFFFFF'>
 There is funding for travel to supplement students.<br>
